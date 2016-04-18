@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1461017816 source:c:\users\uc13100029\progfis03\vetor.c
+	<stdio.h>
+	<math.h>
+	"vetor.h"
+
+1461017816 c:\users\uc13100029\progfis03\vetor.h
+
+1461017608 source:c:\users\uc13100029\progfis03\campoeletrico.c
+	<stdio.h>
+	<math.h>
+	"vetor.h"
+

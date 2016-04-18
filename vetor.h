@@ -1,6 +1,6 @@
 ///
 ///  vetor.h
-///  Versão 2.0
+///  Versão 3.0
 ///
 ///
 ///  Aluno:      Luiz Eduardo Ximenes Neto
@@ -12,10 +12,9 @@
 ///  Copyright © 2016 Luiz Eduardo Ximenes Neto. All rights reserved.
 ///
 
-#ifndef BibConjunto_h
-#define BibConjunto_h
+#ifndef BibVet_h
+#define BibVet_h
 
-#endif /* BibConjunto_h */
 
 struct vetor2{
 	float x;
@@ -76,3 +75,5 @@ void popularR2(Vetor2* v);
 void popularR3(Vetor3* v);
 
 void printVR3(Vetor3 v);
+
+#endif /* BibVet_h */

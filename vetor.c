@@ -1,6 +1,6 @@
 ///
 ///  vetor.c
-///  Versão 2.0
+///  Versão 3.0
 ///
 ///
 ///  Aluno:      Luiz Eduardo Ximenes Neto
