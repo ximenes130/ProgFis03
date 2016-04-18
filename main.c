@@ -13,6 +13,7 @@
 
 #include <stdio.h>
 #include <conio.h>
+#include <string.h>
 #include <stdlib.h>
 #include <math.h>
 #include "vetor.h"
@@ -22,6 +23,37 @@ char _respostas[255];
 
 void lerDados(VQua* qua){
     int i;
+
+    system("cls");
+
+    printf("\n  ----------  INFORME OS DADOS DO QUADRADO ---------\n\n\n\n");
+
+    printf("  L = ");
+    scanf("%f",&(qua->l));
+
+    qua->ponto[0]->vet->x = 0;
+    qua->ponto[0]->vet->y = 0;
+    qua->ponto[0]->vet->z = 0;
+
+    qua->ponto[1]->vet->x = l;
+    qua->ponto[1]->vet->y = 0;
+    qua->ponto[1]->vet->z = 0;
+
+    qua->ponto[2]->vet->x = 0;
+    qua->ponto[2]->vet->y = l;
+    qua->ponto[2]->vet->z = 0;
+
+    qua->ponto[3]->vet->x = l;
+    qua->ponto[3]->vet->y = l;
+    qua->ponto[3]->vet->z = 0;
+
+    for(i=0 ; i<4 ; i++){
+        printf("  q%d = ",i+1);
+        scanf("%f",&(qua->ponto[i]->q));
+    }
+
+    vQuaToString(*qua, _respostas);
+}
 
     printf("     ----------  INFORME OS DADOS DO QUADRADO ---------");
 
@@ -43,7 +75,6 @@ void menu(){
     qua.q[3] = 0;
     qua.l    = 0;
 
-    system("cls");
 
     // Exibe o menu enquanto o usuário não aperta esc (27)
     do{
@@ -65,12 +96,13 @@ void menu(){
         printf("   esc - Encerra o programa\n\n\n");
 
         printf("%s\n",_respostas);
+        strcpy(_respostas,"");
 
         controle = getch();
 
         switch(controle){
         case '1':
-            lerDados(&q);
+            lerDados(&qua);
             break;
         }
 
