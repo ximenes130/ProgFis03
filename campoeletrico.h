@@ -13,7 +13,9 @@
 ///
 
 #ifndef BibCampoEletrico_h
+
 #define BibCampoEletrico_h
+#define K 8987551784.95// k = 1/(4*pi*(8,85418782*10^(-12))) = 8987551784.95
 
 struct cargaR3{
     Vetor3 vet;
@@ -36,19 +38,6 @@ typedef struct vQua VQua;
 typedef struct vCub VCub;
 
 void vQuaToString(VQua qua, char* buffer);
-
-struct vQua{
-	float q[4];
-	float l;
-};
-
-struct vCub{
-	float q[8];
-	float l;
-};
-
-typedef struct vQua VQua;
-typedef struct vCub VCub;
 
 
 #endif /* BibCampoEletrico_h */

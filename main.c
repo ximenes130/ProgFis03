@@ -31,20 +31,20 @@ void lerDados(VQua* qua){
     printf("  L = ");
     scanf("%f",&(qua->l));
 
-    qua->ponto[0]->vet->x = 0;
-    qua->ponto[0]->vet->y = 0;
-    qua->ponto[0]->vet->z = 0;
+    qua->ponto[0]->vet->x = 0.0;
+    qua->ponto[0]->vet->y = 0.0;
+    qua->ponto[0]->vet->z = 0.0;
 
-    qua->ponto[1]->vet->x = l;
+    qua->ponto[1]->vet->x = qua->l;
     qua->ponto[1]->vet->y = 0;
     qua->ponto[1]->vet->z = 0;
 
     qua->ponto[2]->vet->x = 0;
-    qua->ponto[2]->vet->y = l;
+    qua->ponto[2]->vet->y = qua->l;
     qua->ponto[2]->vet->z = 0;
 
-    qua->ponto[3]->vet->x = l;
-    qua->ponto[3]->vet->y = l;
+    qua->ponto[3]->vet->x = qua->l;
+    qua->ponto[3]->vet->y = qua->l;
     qua->ponto[3]->vet->z = 0;
 
     for(i=0 ; i<4 ; i++){
@@ -55,26 +55,15 @@ void lerDados(VQua* qua){
     vQuaToString(*qua, _respostas);
 }
 
-    printf("     ----------  INFORME OS DADOS DO QUADRADO ---------");
-
-    printf("  L = ");
-    scanf("%f",&(qua->l));
-
-    for(i=0 ; i<4 ; i++){
-
-    }
-}
-
 void menu(){
     char controle;
     VQua qua;
 
-    qua.q[0] = 0;
-    qua.q[1] = 0;
-    qua.q[2] = 0;
-    qua.q[3] = 0;
-    qua.l    = 0;
-
+    qua.ponto[0].q = 0;
+    qua.ponto[1].q = 0;
+    qua.ponto[2].q = 0;
+    qua.ponto[3].q = 0;
+    qua.l          = 0;
 
     // Exibe o menu enquanto o usuário não aperta esc (27)
     do{
@@ -82,7 +71,7 @@ void menu(){
         printf("\n\n");
         printf("     ##############################\n");
         printf("     #                            # \n");
-        printf("     #   Programa de Fisica III   # \n");
+        printf("     #   Programa de Fisica III %f  # \n",K);
         printf("     #                            # \n");
         printf("     ##############################\n\n\n");
 
@@ -103,6 +92,12 @@ void menu(){
         switch(controle){
         case '1':
             lerDados(&qua);
+            break;
+        case '2':
+            break;
+        case '3':
+            break;
+        case '4':
             break;
         }
 

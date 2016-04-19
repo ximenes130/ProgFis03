@@ -11,3 +11,18 @@
 	<math.h>
 	"vetor.h"
 
+1461020703 source:c:\users\uc13100029\desktop\progfis03-master\progfis03-master\campoeletrico.c
+	<stdio.h>
+	<math.h>
+	"vetor.h"
+	"campoeletrico.h"
+
+1461020703 c:\users\uc13100029\desktop\progfis03-master\progfis03-master\vetor.h
+
+1461024832 c:\users\uc13100029\desktop\progfis03-master\progfis03-master\campoeletrico.h
+
+1461020703 source:c:\users\uc13100029\desktop\progfis03-master\progfis03-master\vetor.c
+	<stdio.h>
+	<math.h>
+	"vetor.h"
+
