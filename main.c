@@ -3,12 +3,12 @@
 ///
 ///
 ///  Aluno:      Luiz Eduardo Ximenes Neto
-///  disciplina: Física
+///  disciplina: Fï¿½sica
 ///  turma:      A
-///  semestre:   3º
-///  matrícula:  141057600015
+///  semestre:   3ï¿½
+///  matrï¿½cula:  141057600015
 ///
-///  Copyright © 2016 Luiz Eduardo Ximenes Neto. All rights reserved.
+///  Copyright ï¿½ 2016 Luiz Eduardo Ximenes Neto. All rights reserved. blah
 ///
 
 #include <stdio.h>
@@ -65,7 +65,7 @@ void menu(){
     qua.ponto[3].q = 0;
     qua.l          = 0;
 
-    // Exibe o menu enquanto o usuário não aperta esc (27)
+    // Exibe o menu enquanto o usuï¿½rio nï¿½o aperta esc (27)
     do{
         system("cls");
         printf("\n\n");
